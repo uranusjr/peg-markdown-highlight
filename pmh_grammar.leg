@@ -596,10 +596,10 @@ Waves5 = < "~~~~~" > !'~' { $$ = elem(pmh_NO_TYPE); }
 
 Code = < ( s:Ticks1 Sp ( ( !'`' Nonspacechar )+ | !Ticks1 '`'+ | !( Sp Ticks1 ) ( Spacechar | Newline !BlankLine ) )+ Sp Ticks1
        | s:Ticks2 Sp ( ( !'`' Nonspacechar )+ | !Ticks2 '`'+ | !( Sp Ticks2 ) ( Spacechar | Newline !BlankLine ) )+ Sp Ticks2
-       | s:Ticks3 Sp ( ( !'`' Nonspacechar )+ | !Ticks3 '`'+ | !( Sp Ticks3 ) ( Spacechar | Newline !BlankLine ) )+ Sp Ticks3
+       | s:Ticks3 Sp ( ( !'`' Nonspacechar )+ | !Ticks3 '`'+ | !( Sp Ticks3 ) ( Spacechar | Newline ) )+ Sp Ticks3
        | s:Ticks4 Sp ( ( !'`' Nonspacechar )+ | !Ticks4 '`'+ | !( Sp Ticks4 ) ( Spacechar | Newline !BlankLine ) )+ Sp Ticks4
        | s:Ticks5 Sp ( ( !'`' Nonspacechar )+ | !Ticks5 '`'+ | !( Sp Ticks5 ) ( Spacechar | Newline !BlankLine ) )+ Sp Ticks5
-       | s:Waves3 Sp ( ( !'~' Nonspacechar )+ | !Waves3 '~'+ | !( Sp Waves3 ) ( Spacechar | Newline !BlankLine ) )+ Sp Waves3
+       | s:Waves3 Sp ( ( !'~' Nonspacechar )+ | !Waves3 '~'+ | !( Sp Waves3 ) ( Spacechar | Newline ) )+ Sp Waves3
        | s:Waves4 Sp ( ( !'~' Nonspacechar )+ | !Waves4 '~'+ | !( Sp Waves4 ) ( Spacechar | Newline !BlankLine ) )+ Sp Waves4
        | s:Waves5 Sp ( ( !'~' Nonspacechar )+ | !Waves5 '~'+ | !( Sp Waves5 ) ( Spacechar | Newline !BlankLine ) )+ Sp Waves5
        ) >
